@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up</title>
+<link rel="stylesheet" type="text/css" href="css\payment.css">
+<script src="https://kit.fontawesome.com/cb7b89efc6.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<form name="myform" onsubmit="return valid()" action="SignUp.jsp">
+<center>
+<table>
+<tr>
+<th><i class="fa fa-user" id="ma"></i>&nbsp;&nbsp;&nbsp;&nbsp;Name:</th>
+<th ><input type="text" name="n1" pattern="[a-zA-Z ]{3,}" title="name must be in alphabates" required></th>
+</tr>
+<tr>
+<th><i class="fa fa-mobile" id="ma"></i>&nbsp;&nbsp;Mobile&nbsp;Number:</th>
+<th><input type="text" name="n2"></th>
+</tr>
+<tr>
+<th><i class="fa fa-key" id="mm"></i>&nbsp;&nbsp;&nbsp;&nbsp;Password:</th>
+<th><input type="Password" name="p" pattern="[a-zA-Z0-9]{6,}" title="password minimum 6 digits" required></th>
+</tr>
+<tr>
+<th><i class="fa fa-key" id="mm"></i>&nbsp;Re Enter</th>
+<th><input type="Password" name="cp" required></th>
+</tr>
+<tr>
+<td><center><a href="login.html" style="color: blue;">I have an account</a></center></td>
+</tr>
+<tr>
+<th><input type="submit" value="Register" ></th>
+
+</tr>
+
+</table>
+</center>
+</form>
+<script type="text/javascript" src="valid.js"></script>
+
+</body>
+</html>
